@@ -14,6 +14,7 @@ document.addEventListener('DOMContentLoaded', () => {
   /* ---------- Mobile nav ---------- */
   const nav = document.getElementById('mainNav');
   const toggle = document.getElementById('navToggle');
+  const floating = document.getElementById('floatingActions');
   const backdrop = document.createElement('div');
   backdrop.className = 'nav-backdrop';
   document.body.appendChild(backdrop);
@@ -23,12 +24,14 @@ document.addEventListener('DOMContentLoaded', () => {
     toggle.classList.remove('open');
     backdrop.classList.remove('open');
     toggle.setAttribute('aria-expanded', 'false');
+    if (floating) floating.classList.remove('hidden');
   };
   const openNav = () => {
     nav.classList.add('open');
     toggle.classList.add('open');
     backdrop.classList.add('open');
     toggle.setAttribute('aria-expanded', 'true');
+    if (floating) floating.classList.add('hidden');
   };
 
   toggle.addEventListener('click', () => {
@@ -71,6 +74,46 @@ document.addEventListener('DOMContentLoaded', () => {
     el.style.transitionDelay = `${Math.min(i % 6, 5) * 70}ms`;
     revealObserver.observe(el);
   });
+
+  /* ---------- Stat counters ---------- */
+  const statEls = document.querySelectorAll('.stat-number');
+  const animateCount = (el) => {
+    const target = parseFloat(el.dataset.target || '0');
+    const prefix = el.dataset.prefix || '';
+    const suffix = el.dataset.suffix || '';
+    const duration = 1400;
+    const start = performance.now();
+
+    const tick = (now) => {
+      const progress = Math.min((now - start) / duration, 1);
+      const eased = 1 - Math.pow(1 - progress, 3);
+      const value = Math.round(target * eased);
+      el.textContent = `${prefix}${value}${suffix}`;
+      if (progress < 1) requestAnimationFrame(tick);
+    };
+    requestAnimationFrame(tick);
+  };
+
+  const statObserver = new IntersectionObserver((entries, obs) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        animateCount(entry.target);
+        obs.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.6 });
+
+  statEls.forEach(el => statObserver.observe(el));
+
+  /* ---------- Before / after slider ---------- */
+  const baSlider = document.getElementById('baSlider');
+  const baRange = document.getElementById('baRange');
+  if (baSlider && baRange) {
+    const setPos = (value) => {
+      baSlider.style.setProperty('--pos', `${value}%`);
+    };
+    baRange.addEventListener('input', (e) => setPos(e.target.value));
+  }
 
   /* ---------- Contact form ---------- */
   const form = document.getElementById('contactForm');
@@ -120,7 +163,7 @@ document.addEventListener('DOMContentLoaded', () => {
         note.className = 'form-note success';
         form.reset();
         submitBtn.disabled = false;
-        submitBtn.textContent = 'Enviar mensaje';
+        submitBtn.textContent = 'Enviar solicitud';
       }, 700);
     });
   }
