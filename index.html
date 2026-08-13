@@ -3,916 +3,292 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>RENOVE PROYECTOS | Construcción y Reformas en Castelló de la Plana</title>
-<meta name="description" content="Estudio de construcción y reformas en Castelló de la Plana. Proyectos llave en mano, diseñados para durar: reformas integrales, interiorismo, obra nueva, eficiencia energética y arquitectura.">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2224%22 fill=%22%232563eb%22/><text x=%2250%22 y=%2268%22 font-size=%2258%22 font-weight=%22700%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Arial,sans-serif%22>R</text></svg>">
+<title>ACA Agency | Webs para empresas de reformas</title>
+<meta name="description" content="Diseñamos webs para empresas de reformas integrales que convierten visitas en solicitudes de presupuesto. Entrega en dos semanas, precio cerrado. Castellón y Comunidad Valenciana.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><rect width=%22100%22 height=%22100%22 rx=%2222%22 fill=%22%2310182b%22/><text x=%2250%22 y=%2266%22 font-size=%2244%22 font-weight=%22800%22 text-anchor=%22middle%22 fill=%22%23ffffff%22 font-family=%22Arial,sans-serif%22>A</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<!-- ===== SHARED SVG ILLUSTRATION DEFS ===== -->
+<!-- ===== SPRITE DE ICONOS ===== -->
 <svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
 <defs>
-  <linearGradient id="gWall" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#f3f6fb"/>
-    <stop offset="100%" stop-color="#dbe4f2"/>
-  </linearGradient>
-  <linearGradient id="gWallWarm" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#faf6ef"/>
-    <stop offset="100%" stop-color="#ecdfc7"/>
-  </linearGradient>
-  <linearGradient id="gFloorWood" x1="0" y1="0" x2="1" y2="0.15">
-    <stop offset="0%" stop-color="#c9a06e"/>
-    <stop offset="100%" stop-color="#a67a49"/>
-  </linearGradient>
-  <linearGradient id="gFloorLight" x1="0" y1="0" x2="1" y2="0.2">
-    <stop offset="0%" stop-color="#e7dfcd"/>
-    <stop offset="100%" stop-color="#d3c6a9"/>
-  </linearGradient>
-  <linearGradient id="gSky" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#bfdcfb"/>
-    <stop offset="100%" stop-color="#eef6ff"/>
-  </linearGradient>
-  <radialGradient id="gSun" cx="50%" cy="50%" r="50%">
-    <stop offset="0%" stop-color="#fff6da" stop-opacity="0.95"/>
-    <stop offset="100%" stop-color="#fff6da" stop-opacity="0"/>
-  </radialGradient>
-  <radialGradient id="gLampGlow" cx="50%" cy="50%" r="50%">
-    <stop offset="0%" stop-color="#ffd98a" stop-opacity="0.85"/>
-    <stop offset="100%" stop-color="#ffd98a" stop-opacity="0"/>
-  </radialGradient>
-  <linearGradient id="gSofaBlue" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#3b5c94" />
-    <stop offset="100%" stop-color="#24365c"/>
-  </linearGradient>
-  <linearGradient id="gSofaBlueLight" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#5b83c4"/>
-    <stop offset="100%" stop-color="#3b5c94"/>
-  </linearGradient>
-  <linearGradient id="gSofaNeutral" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#f2ece0"/>
-    <stop offset="100%" stop-color="#ddd0b8"/>
-  </linearGradient>
-  <linearGradient id="gWood" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#c79a63"/>
-    <stop offset="100%" stop-color="#8f6436"/>
-  </linearGradient>
-  <linearGradient id="gWoodDark" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#8a6540"/>
-    <stop offset="100%" stop-color="#5c4229"/>
-  </linearGradient>
-  <linearGradient id="gMarble" x1="0" y1="0" x2="1" y2="0.3">
-    <stop offset="0%" stop-color="#f7f5f0"/>
-    <stop offset="100%" stop-color="#e4e0d6"/>
-  </linearGradient>
-  <linearGradient id="gLeaf" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#89b374"/>
-    <stop offset="100%" stop-color="#4c7a52"/>
-  </linearGradient>
-  <linearGradient id="gPot" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#e4ddce"/>
-    <stop offset="100%" stop-color="#bfb49a"/>
-  </linearGradient>
-  <linearGradient id="gMetal" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#e2e8f0"/>
-    <stop offset="100%" stop-color="#a8b6c8"/>
-  </linearGradient>
-  <linearGradient id="gGlass" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#cfe4fb" stop-opacity="0.65"/>
-    <stop offset="100%" stop-color="#cfe4fb" stop-opacity="0.2"/>
-  </linearGradient>
-  <linearGradient id="gAccentPanel" x1="0" y1="0" x2="1" y2="1">
-    <stop offset="0%" stop-color="#3b82f6"/>
-    <stop offset="100%" stop-color="#1d4ed8"/>
-  </linearGradient>
-  <linearGradient id="gRoof" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#5b6b85"/>
-    <stop offset="100%" stop-color="#374357"/>
-  </linearGradient>
-  <linearGradient id="gBrick" x1="0" y1="0" x2="0" y2="1">
-    <stop offset="0%" stop-color="#c98a6b"/>
-    <stop offset="100%" stop-color="#a86648"/>
-  </linearGradient>
-  <filter id="fSoftShadow" x="-60%" y="-60%" width="220%" height="220%">
-    <feGaussianBlur stdDeviation="7"/>
-  </filter>
-  <filter id="fGlow" x="-100%" y="-100%" width="300%" height="300%">
-    <feGaussianBlur stdDeviation="16"/>
-  </filter>
-  <filter id="fGlowSoft" x="-100%" y="-100%" width="300%" height="300%">
-    <feGaussianBlur stdDeviation="9"/>
-  </filter>
+  <symbol id="icon-menu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="18" x2="21" y2="18"/></symbol>
+  <symbol id="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><line x1="5" y1="5" x2="19" y2="19"/><line x1="19" y1="5" x2="5" y2="19"/></symbol>
+  <symbol id="icon-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s7-6.2 7-11.6A7 7 0 0 0 5 9.4C5 14.8 12 21 12 21Z"/><circle cx="12" cy="9.4" r="2.4"/></symbol>
+  <symbol id="icon-check" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12.5 9.5 18 20 6"/></symbol>
+  <symbol id="icon-gallery" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="14" height="14" rx="2"/><path d="M3 14.5 7.5 10l3 3 2.5-2.5L17 14.5"/><circle cx="7" cy="8" r="1.3"/><path d="M9 20h9a2 2 0 0 0 2-2V9"/></symbol>
+  <symbol id="icon-form" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M8 3.5H6.5A2.5 2.5 0 0 0 4 6v14a2.5 2.5 0 0 0 2.5 2.5h11A2.5 2.5 0 0 0 20 20V6a2.5 2.5 0 0 0-2.5-2.5H16"/><rect x="8" y="2.5" width="8" height="3.5" rx="1"/><line x1="8" y1="12" x2="16" y2="12"/><line x1="8" y1="16" x2="13" y2="16"/></symbol>
+  <symbol id="icon-whatsapp" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21.5c5.25 0 9.5-4.25 9.5-9.5S17.25 2.5 12 2.5 2.5 6.75 2.5 12c0 1.68.44 3.26 1.2 4.63L2.75 21.5l5.02-.97A9.44 9.44 0 0 0 12 21.5Z"/><path d="M8.5 8.7c.15-.55.65-.9 1.2-.85h.55c.35 0 .6.25.7.55l.6 1.7c.1.3 0 .6-.2.8l-.6.6c-.1.1-.15.3-.05.45.5.9 1.5 1.9 2.4 2.4.15.1.35.05.45-.05l.6-.6c.2-.2.5-.3.8-.2l1.7.6c.3.1.55.35.55.7v.55c.05.55-.3 1.05-.85 1.2-1.9.5-4.35-.6-6.05-2.3-1.7-1.7-2.8-4.15-2.3-6.05Z"/></symbol>
+  <symbol id="icon-search" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><line x1="16.2" y1="16.2" x2="21" y2="21"/></symbol>
+  <symbol id="icon-mobile" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="2.5" width="10" height="19" rx="2.2"/><line x1="10.5" y1="18.3" x2="13.5" y2="18.3"/></symbol>
+  <symbol id="icon-bolt" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2.5 4.5 14h6l-1 7.5L19 10h-6l1-7.5Z"/></symbol>
+  <symbol id="icon-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="2.3"/><path d="m3.5 6 8.5 6.5L20.5 6"/></symbol>
+  <symbol id="icon-phone" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3.5h3l1.6 4.3-2 1.7a13 13 0 0 0 6.9 6.9l1.7-2 4.3 1.6v3a1.6 1.6 0 0 1-1.7 1.6A16.5 16.5 0 0 1 3.4 5.2 1.6 1.6 0 0 1 5 3.5Z"/></symbol>
+  <symbol id="icon-plus" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"><line x1="12" y1="5" x2="12" y2="19"/><line x1="5" y1="12" x2="19" y2="12"/></symbol>
+  <symbol id="icon-info" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><line x1="12" y1="11" x2="12" y2="16.5"/><circle cx="12" cy="7.7" r="0.9" fill="currentColor" stroke="none"/></symbol>
+  <symbol id="icon-clock" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5.3l3.5 2"/></symbol>
 </defs>
 </svg>
 
-<!-- ===== HEADER ===== -->
-<header class="site-header" id="siteHeader">
-  <div class="container header-inner">
-    <a href="#inicio" class="logo">
-      <span class="logo-mark">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M9.5 19.5V14h5v5.5"/></svg>
-      </span>
-      <span class="logo-text">RENOVE<em>PROYECTOS</em></span>
+<!-- ===== CABECERA ===== -->
+<header class="site-header">
+  <div class="container">
+    <a href="index.html" class="brand">
+      <span class="brand-mark">A</span>
+      <span class="brand-name">ACA <span>Agency</span></span>
     </a>
-
-    <nav class="main-nav" id="mainNav">
-      <ul>
-        <li><a href="#inicio" class="nav-link active">Inicio</a></li>
-        <li><a href="#nosotros" class="nav-link">Sobre nosotros</a></li>
-        <li><a href="#servicios" class="nav-link">Servicios</a></li>
-        <li><a href="#proyectos" class="nav-link">Proyectos</a></li>
-        <li><a href="#contacto" class="nav-link">Contacto</a></li>
+    <nav class="site-nav" id="site-nav">
+      <ul class="nav-links">
+        <li><a href="index.html" aria-current="page">Inicio</a></li>
+        <li><a href="trabajos.html">Trabajos</a></li>
+        <li><a href="precios.html">Precios</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
       </ul>
+      <div class="header-actions">
+        <a href="contacto.html" class="btn btn-primary">Hablemos</a>
+      </div>
     </nav>
-
-    <div class="header-actions">
-      <a href="tel:+34687721555" class="header-phone">
-        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-        687 72 15 55
-      </a>
-      <a href="#contacto" class="btn btn-primary btn-small">Solicitar presupuesto</a>
-    </div>
-
-    <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
-      <span></span><span></span><span></span>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="site-nav">
+      <svg class="icon-menu"><use href="#icon-menu"/></svg>
+      <svg class="icon-close"><use href="#icon-close"/></svg>
     </button>
   </div>
 </header>
 
-<!-- ===== HERO ===== -->
-<section class="hero" id="inicio">
-  <div class="container hero-grid">
-    <div class="hero-content">
-      <span class="badge reveal">
-        <svg viewBox="0 0 24 24" width="13" height="13" fill="none" stroke="currentColor" stroke-width="2.2"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-        Castelló de la Plana
-      </span>
-      <h1 class="reveal">Reformas que <span class="text-accent">transforman tu hogar</span></h1>
-      <p class="hero-sub reveal">Estudio de construcción y reformas en Castelló de la Plana. Proyectos llave en mano, diseñados para durar, con materiales de primera y gestión propia de principio a fin.</p>
-      <div class="hero-actions reveal">
-        <a href="#contacto" class="btn btn-primary btn-large">Solicitar presupuesto</a>
-        <a href="#proyectos" class="btn btn-outline-navy btn-large">Ver proyectos</a>
-      </div>
-      <p class="hero-trust reveal">
-        <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M20 6 9 17l-5-5"/></svg>
-        Sin compromiso · Respuesta en menos de 24&nbsp;h · +50 proyectos entregados
-      </p>
-    </div>
+<main>
 
-    <div class="hero-visual reveal">
-      <div class="hero-image">
-        <svg viewBox="0 0 640 720" class="scene" preserveAspectRatio="xMidYMax slice" aria-hidden="true">
-          <rect width="640" height="720" fill="url(#gWall)"/>
-          <rect x="0" y="470" width="640" height="250" fill="url(#gFloorWood)"/>
-          <g stroke="#8f6b41" stroke-width="1" opacity="0.35">
-            <line x1="0" y1="520" x2="640" y2="520"/>
-            <line x1="0" y1="575" x2="640" y2="575"/>
-            <line x1="0" y1="630" x2="640" y2="630"/>
-            <line x1="0" y1="685" x2="640" y2="685"/>
-          </g>
-          <rect x="40" y="70" width="220" height="290" rx="6" fill="url(#gSky)"/>
-          <circle cx="220" cy="140" r="70" fill="url(#gSun)"/>
-          <g stroke="#ffffff" stroke-width="6" opacity="0.9">
-            <line x1="150" y1="70" x2="150" y2="360"/>
-            <line x1="40" y1="215" x2="260" y2="215"/>
-          </g>
-          <polygon points="40,360 150,470 260,360" fill="#ffffff" opacity="0.18"/>
-          <ellipse cx="470" cy="590" rx="150" ry="18" fill="#1e293b" opacity="0.10" filter="url(#fSoftShadow)"/>
-          <rect x="330" y="470" width="290" height="120" rx="26" fill="url(#gSofaNeutral)"/>
-          <rect x="330" y="470" width="290" height="34" rx="17" fill="#ffffff" opacity="0.35"/>
-          <rect x="352" y="428" width="70" height="58" rx="16" fill="url(#gSofaBlueLight)"/>
-          <rect x="432" y="428" width="70" height="58" rx="16" fill="url(#gSofaBlue)"/>
-          <rect x="512" y="428" width="70" height="58" rx="16" fill="url(#gSofaBlueLight)"/>
-          <rect x="300" y="560" width="340" height="16" rx="8" fill="#1e293b" opacity="0.08"/>
-          <ellipse cx="180" cy="640" rx="120" ry="16" fill="#1e293b" opacity="0.07" filter="url(#fSoftShadow)"/>
-          <rect x="80" y="560" width="200" height="90" rx="10" fill="url(#gWood)"/>
-          <rect x="80" y="560" width="200" height="14" rx="7" fill="#ffffff" opacity="0.25"/>
-          <ellipse cx="470" cy="410" rx="150" ry="60" fill="url(#gLampGlow)" filter="url(#fGlow)"/>
-          <line x1="470" y1="130" x2="470" y2="320" stroke="#4a4033" stroke-width="3"/>
-          <path d="M430 320 L510 320 L495 375 L445 375 Z" fill="url(#gWoodDark)"/>
-          <g>
-            <ellipse cx="120" cy="490" rx="30" ry="18" fill="url(#gPot)"/>
-            <path d="M120 490 C 95 430, 105 380, 120 340" stroke="url(#gLeaf)" stroke-width="7" fill="none" stroke-linecap="round"/>
-            <path d="M120 490 C 145 435, 138 390, 120 350" stroke="url(#gLeaf)" stroke-width="7" fill="none" stroke-linecap="round"/>
-            <path d="M120 490 C 118 420, 120 370, 120 330" stroke="url(#gLeaf)" stroke-width="6" fill="none" stroke-linecap="round"/>
-          </g>
-          <rect x="330" y="150" width="130" height="170" rx="10" fill="#ffffff"/>
-          <rect x="330" y="150" width="130" height="170" rx="10" fill="none" stroke="#dbe4f2" stroke-width="3"/>
-          <circle cx="380" cy="215" r="34" fill="#2563eb" opacity="0.85"/>
-          <circle cx="425" cy="255" r="20" fill="#93c5fd" opacity="0.8"/>
-          <path d="M355 260 Q 400 300 450 260" stroke="#1d4ed8" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
-        </svg>
-      </div>
-      <div class="hero-floating-card">
-        <span class="hero-floating-icon">
-          <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg>
-        </span>
-        <div>
-          <strong>Reforma integral</strong>
-          <p>Vivienda de 140&nbsp;m² renovada por completo en Castelló de la Plana</p>
-          <span class="hero-floating-rating">★★★★★ <em>4.9/5</em></span>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CIFRAS / STATS ===== -->
-<section class="stats" id="cifras">
-  <div class="container stats-grid">
-    <div class="stat reveal">
-      <span class="stat-number" data-target="50" data-prefix="+">0</span>
-      <span class="stat-label">Proyectos entregados</span>
-    </div>
-    <div class="stat reveal">
-      <span class="stat-number" data-target="10">0</span>
-      <span class="stat-label">Años de experiencia</span>
-    </div>
-    <div class="stat reveal">
-      <span class="stat-number" data-target="100" data-suffix="%">0</span>
-      <span class="stat-label">Proyectos llave en mano</span>
-    </div>
-    <div class="stat reveal">
-      <span class="stat-number" data-target="98" data-suffix="%">0</span>
-      <span class="stat-label">Clientes satisfechos</span>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SOBRE NOSOTROS ===== -->
-<section class="about" id="nosotros">
-  <div class="container about-grid">
-    <div class="about-visual reveal">
-      <div class="img-card about-image">
-        <svg viewBox="0 0 560 640" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-          <rect width="560" height="640" fill="url(#gWallWarm)"/>
-          <rect x="0" y="430" width="560" height="210" fill="url(#gFloorLight)"/>
-          <g stroke="#c3b28d" stroke-width="1" opacity="0.4">
-            <line x1="0" y1="480" x2="560" y2="480"/>
-            <line x1="0" y1="530" x2="560" y2="530"/>
-            <line x1="0" y1="580" x2="560" y2="580"/>
-          </g>
-          <rect x="330" y="60" width="180" height="240" rx="6" fill="url(#gSky)"/>
-          <circle cx="470" cy="120" r="55" fill="url(#gSun)"/>
-          <g stroke="#fff" stroke-width="5" opacity="0.85">
-            <line x1="420" y1="60" x2="420" y2="300"/>
-            <line x1="330" y1="180" x2="510" y2="180"/>
-          </g>
-          <ellipse cx="180" cy="560" rx="130" ry="16" fill="#1e293b" opacity="0.08" filter="url(#fSoftShadow)"/>
-          <rect x="70" y="410" width="220" height="150" rx="20" fill="url(#gSofaBlue)"/>
-          <rect x="70" y="410" width="220" height="30" rx="15" fill="#ffffff" opacity="0.2"/>
-          <rect x="90" y="375" width="55" height="48" rx="14" fill="url(#gSofaBlueLight)"/>
-          <rect x="155" y="375" width="55" height="48" rx="14" fill="#ffffff" opacity="0.85"/>
-          <rect x="30" y="560" width="220" height="14" rx="7" fill="#1e293b" opacity="0.07"/>
-          <ellipse cx="330" cy="600" rx="90" ry="14" fill="#1e293b" opacity="0.07" filter="url(#fSoftShadow)"/>
-          <rect x="290" y="480" width="90" height="90" rx="8" fill="url(#gWood)"/>
-          <circle cx="335" cy="470" r="24" fill="url(#gPot)"/>
-          <path d="M335 470 C 315 430, 322 400, 335 375" stroke="url(#gLeaf)" stroke-width="6" fill="none" stroke-linecap="round"/>
-          <path d="M335 470 C 355 435, 348 405, 335 385" stroke="url(#gLeaf)" stroke-width="6" fill="none" stroke-linecap="round"/>
-          <rect x="60" y="150" width="150" height="190" rx="10" fill="#ffffff"/>
-          <rect x="60" y="150" width="150" height="190" rx="10" fill="none" stroke="#ecdfc7" stroke-width="3"/>
-          <g fill="none" stroke="#2563eb" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" opacity="0.85">
-            <path d="M85 300 L85 220 L135 220 L135 300"/>
-            <path d="M85 220 L110 190 L135 220"/>
-            <circle cx="110" cy="255" r="8"/>
-          </g>
-          <rect x="410" y="400" width="60" height="80" rx="6" fill="url(#gWoodDark)"/>
-          <line x1="440" y1="330" x2="440" y2="400" stroke="#4a4033" stroke-width="3"/>
-          <path d="M405 330 L475 330 L460 375 L420 375 Z" fill="url(#gWoodDark)"/>
-        </svg>
-      </div>
-      <div class="about-badge">
-        <span class="badge-number">100%</span>
-        <span class="badge-label">Proyectos a medida</span>
-      </div>
-    </div>
-
-    <div class="about-copy reveal">
-      <span class="badge badge-navy">Sobre nosotros</span>
-      <h2>Un estudio que diseña y <span class="text-accent">construye con criterio</span></h2>
-      <p>En RENOVE PROYECTOS somos un estudio de construcción con sede en Castelló de la Plana. Trabajamos con equipos reducidos y un trato cercano para poder dedicar a cada proyecto la atención que merece, desde una pequeña reforma hasta una vivienda de obra nueva completa.</p>
-      <p>Creemos en los proyectos diferenciados: seleccionamos materiales de primera calidad, cuidamos cada acabado y coordinamos todos los oficios bajo un único interlocutor, para que el cliente disfrute de un proceso llave en mano, sin sorpresas y con plazos claros.</p>
-
-      <ul class="about-points">
-        <li>
-          <span class="check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>
-          Materiales de primera calidad y proveedores de confianza
-        </li>
-        <li>
-          <span class="check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>
-          Proyectos a medida, adaptados a cada espacio y cliente
-        </li>
-        <li>
-          <span class="check-icon"><svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="3"><path d="M20 6 9 17l-5-5"/></svg></span>
-          Gestión llave en mano de principio a fin
-        </li>
-      </ul>
-
-      <a href="#contacto" class="btn btn-primary">Solicitar presupuesto</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== SERVICIOS ===== -->
-<section class="services" id="servicios">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="badge">Servicios</span>
-      <h2>Todo lo que necesita tu proyecto</h2>
-      <p class="section-lead">Un equipo, todas las fases del proyecto. Desde el diseño inicial hasta la última entrega de llaves.</p>
-    </div>
-
-    <div class="services-grid">
-      <article class="service-card reveal">
-        <div class="service-card-media">
-          <svg viewBox="0 0 480 320" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="320" fill="url(#gWall)"/>
-            <rect x="0" y="220" width="480" height="100" fill="url(#gFloorWood)"/>
-            <g stroke="#8f6b41" stroke-width="1" opacity="0.3"><line x1="0" y1="250" x2="480" y2="250"/><line x1="0" y1="285" x2="480" y2="285"/></g>
-            <rect x="30" y="40" width="130" height="150" rx="6" fill="url(#gSky)"/>
-            <circle cx="140" cy="90" r="34" fill="url(#gSun)"/>
-            <line x1="95" y1="40" x2="95" y2="190" stroke="#fff" stroke-width="4" opacity="0.85"/>
-            <ellipse cx="330" cy="270" rx="120" ry="14" fill="#1e293b" opacity="0.09" filter="url(#fSoftShadow)"/>
-            <rect x="240" y="200" width="200" height="75" rx="16" fill="url(#gSofaNeutral)"/>
-            <rect x="255" y="175" width="45" height="35" rx="10" fill="url(#gSofaBlue)"/>
-            <rect x="310" y="175" width="45" height="35" rx="10" fill="url(#gSofaBlueLight)"/>
-            <ellipse cx="170" cy="280" rx="70" ry="10" fill="#1e293b" opacity="0.06"/>
-            <rect x="60" y="220" width="140" height="55" rx="8" fill="url(#gWood)"/>
-            <circle cx="90" cy="212" r="16" fill="url(#gPot)"/>
-            <path d="M90 212 C 78 185 82 168 90 150" stroke="url(#gLeaf)" stroke-width="5" fill="none" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <span class="service-card-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9.5 12 3l9 6.5"/><path d="M5 9v11h14V9"/><path d="M9 20v-6h6v6"/></svg>
-        </span>
-        <div class="service-card-body">
-          <h3>Reformas integrales</h3>
-          <p>Renovación completa de viviendas y locales: instalaciones, distribución, carpintería y acabados, coordinado de principio a fin.</p>
-          <a href="#contacto" class="service-card-link">Pedir presupuesto <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-card-media">
-          <svg viewBox="0 0 480 320" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="320" fill="url(#gWallWarm)"/>
-            <rect x="0" y="220" width="480" height="100" fill="url(#gFloorLight)"/>
-            <g stroke="#c3b28d" stroke-width="1" opacity="0.35"><line x1="0" y1="250" x2="480" y2="250"/><line x1="0" y1="285" x2="480" y2="285"/></g>
-            <rect x="320" y="40" width="120" height="150" rx="8" fill="#ffffff"/>
-            <rect x="320" y="40" width="120" height="150" rx="8" fill="none" stroke="#ecdfc7" stroke-width="3"/>
-            <path d="M340 160 L370 110 L390 135 L415 90" stroke="#2563eb" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.85"/>
-            <ellipse cx="150" cy="272" rx="90" ry="12" fill="#1e293b" opacity="0.08" filter="url(#fSoftShadow)"/>
-            <path d="M90 220 Q90 175 140 175 Q190 175 190 220" fill="url(#gSofaBlue)"/>
-            <rect x="70" y="220" width="140" height="45" rx="12" fill="url(#gSofaBlue)"/>
-            <circle cx="250" cy="150" r="18" fill="url(#gPot)"/>
-            <path d="M250 150 C 235 110 240 85 250 60" stroke="url(#gLeaf)" stroke-width="6" fill="none" stroke-linecap="round"/>
-            <path d="M250 150 C 265 115 260 90 250 70" stroke="url(#gLeaf)" stroke-width="5" fill="none" stroke-linecap="round"/>
-            <rect x="230" y="150" width="40" height="70" rx="6" fill="url(#gWood)"/>
-            <line x1="150" y1="130" x2="150" y2="175" stroke="#4a4033" stroke-width="3"/>
-            <path d="M120 130 L180 130 L168 155 L132 155 Z" fill="url(#gWoodDark)"/>
-            <rect x="60" y="235" width="150" height="10" rx="5" fill="#2563eb" opacity="0.25"/>
-          </svg>
-        </div>
-        <span class="service-card-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21V8l8-5 8 5v13"/><path d="M9 21v-6h6v6"/><path d="M4 12h16"/></svg>
-        </span>
-        <div class="service-card-body">
-          <h3>Interiorismo</h3>
-          <p>Diseño de espacios interiores con criterio estético y funcional: materiales, iluminación, mobiliario y decoración a medida.</p>
-          <a href="#contacto" class="service-card-link">Pedir presupuesto <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-card-media">
-          <svg viewBox="0 0 480 320" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="320" fill="url(#gSky)"/>
-            <circle cx="400" cy="60" r="30" fill="url(#gSun)"/>
-            <rect x="0" y="250" width="480" height="70" fill="#dfead9"/>
-            <ellipse cx="240" cy="255" rx="220" ry="14" fill="#1e293b" opacity="0.08" filter="url(#fSoftShadow)"/>
-            <polygon points="150,250 150,150 240,90 330,150 330,250" fill="#ffffff"/>
-            <polygon points="140,155 240,85 340,155 240,105" fill="url(#gRoof)"/>
-            <rect x="175" y="180" width="45" height="45" rx="4" fill="url(#gGlass)" stroke="#c7d2e0" stroke-width="3"/>
-            <rect x="260" y="180" width="45" height="45" rx="4" fill="url(#gGlass)" stroke="#c7d2e0" stroke-width="3"/>
-            <rect x="222" y="195" width="36" height="55" rx="3" fill="url(#gWoodDark)"/>
-            <circle cx="248" cy="222" r="2.4" fill="#e2e8f0"/>
-            <rect x="60" y="200" width="70" height="50" rx="4" fill="url(#gBrick)" opacity="0.9"/>
-            <rect x="350" y="210" width="55" height="40" rx="4" fill="url(#gBrick)" opacity="0.75"/>
-            <circle cx="90" cy="245" r="16" fill="url(#gLeaf)"/>
-            <circle cx="380" cy="248" r="20" fill="url(#gLeaf)"/>
-            <rect x="0" y="260" width="480" height="6" fill="#c7bda0" opacity="0.6"/>
-          </svg>
-        </div>
-        <span class="service-card-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7" rx="1"/><rect x="14" y="3" width="7" height="7" rx="1"/><rect x="3" y="14" width="7" height="7" rx="1"/><rect x="14" y="14" width="7" height="7" rx="1"/></svg>
-        </span>
-        <div class="service-card-body">
-          <h3>Obra nueva</h3>
-          <p>Construcción de vivienda unifamiliar y promociones desde cero, con seguimiento técnico y de calidad en cada fase de la obra.</p>
-          <a href="#contacto" class="service-card-link">Pedir presupuesto <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-card-media">
-          <svg viewBox="0 0 480 320" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="320" fill="url(#gSky)"/>
-            <circle cx="370" cy="55" r="34" fill="url(#gSun)"/>
-            <g stroke="#fbbf24" stroke-width="3" opacity="0.7">
-              <line x1="370" y1="10" x2="370" y2="22"/>
-              <line x1="415" y1="55" x2="403" y2="55"/>
-              <line x1="401" y1="24" x2="393" y2="32"/>
-            </g>
-            <rect x="0" y="250" width="480" height="70" fill="#dfead9"/>
-            <polygon points="120,250 120,160 240,95 360,160 360,250" fill="#eef2f7"/>
-            <polygon points="110,165 240,90 370,165 240,115" fill="url(#gRoof)"/>
-            <g>
-              <rect x="145" y="120" width="34" height="20" rx="2" fill="#1d2b4a" transform="rotate(-8 162 130)"/>
-              <rect x="182" y="112" width="34" height="20" rx="2" fill="#24365c" transform="rotate(-8 199 122)"/>
-              <rect x="219" y="104" width="34" height="20" rx="2" fill="#1d2b4a" transform="rotate(-8 236 114)"/>
-            </g>
-            <rect x="170" y="190" width="50" height="50" rx="4" fill="url(#gGlass)" stroke="#c7d2e0" stroke-width="3"/>
-            <rect x="270" y="190" width="50" height="50" rx="4" fill="url(#gGlass)" stroke="#c7d2e0" stroke-width="3"/>
-            <ellipse cx="240" cy="255" rx="200" ry="12" fill="#1e293b" opacity="0.07" filter="url(#fSoftShadow)"/>
-            <circle cx="70" cy="245" r="18" fill="url(#gLeaf)"/>
-            <circle cx="410" cy="248" r="22" fill="url(#gLeaf)"/>
-          </svg>
-        </div>
-        <span class="service-card-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="5"/><path d="M12 1v3M12 20v3M4.2 4.2l2.1 2.1M17.7 17.7l2.1 2.1M1 12h3M20 12h3M4.2 19.8l2.1-2.1M17.7 6.3l2.1-2.1"/></svg>
-        </span>
-        <div class="service-card-body">
-          <h3>Eficiencia energética</h3>
-          <p>Soluciones de aislamiento, climatización y energías renovables para reducir el consumo y mejorar la calificación energética.</p>
-          <a href="#contacto" class="service-card-link">Pedir presupuesto <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-
-      <article class="service-card reveal">
-        <div class="service-card-media">
-          <svg viewBox="0 0 480 320" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="320" fill="url(#gWall)"/>
-            <rect x="0" y="220" width="480" height="100" fill="url(#gFloorLight)"/>
-            <ellipse cx="240" cy="270" rx="180" ry="14" fill="#1e293b" opacity="0.08" filter="url(#fSoftShadow)"/>
-            <rect x="90" y="150" width="260" height="90" rx="8" fill="url(#gWood)"/>
-            <rect x="90" y="150" width="260" height="14" rx="7" fill="#ffffff" opacity="0.25"/>
-            <rect x="110" y="130" width="140" height="4" fill="#1e293b" opacity="0.12"/>
-            <g stroke="#2563eb" stroke-width="2" opacity="0.75">
-              <line x1="115" y1="100" x2="245" y2="100"/>
-              <line x1="115" y1="112" x2="220" y2="112"/>
-              <rect x="115" y="70" width="130" height="26" fill="none"/>
-              <line x1="150" y1="70" x2="150" y2="96"/>
-              <line x1="115" y1="83" x2="245" y2="83"/>
-            </g>
-            <rect x="260" y="115" width="70" height="45" rx="4" fill="#1e293b" opacity="0.85"/>
-            <rect x="266" y="121" width="58" height="30" rx="2" fill="#3b5c94"/>
-            <rect x="130" y="180" width="30" height="35" rx="4" fill="url(#gAccentPanel)"/>
-            <polygon points="145,178 130,192 160,192" fill="url(#gAccentPanel)"/>
-            <circle cx="330" cy="200" r="14" fill="url(#gPot)"/>
-            <path d="M330 200 C 320 175 324 160 330 145" stroke="url(#gLeaf)" stroke-width="5" fill="none" stroke-linecap="round"/>
-          </svg>
-        </div>
-        <span class="service-card-icon">
-          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18"/><path d="M5 21V9l7-6 7 6v12"/><path d="M10 21v-6h4v6"/><path d="M9 12h.01M15 12h.01M9 9h.01M15 9h.01"/></svg>
-        </span>
-        <div class="service-card-body">
-          <h3>Arquitectura y diseño</h3>
-          <p>Proyectos técnicos, licencias y dirección de obra de la mano de un equipo de arquitectura que acompaña todo el proceso.</p>
-          <a href="#contacto" class="service-card-link">Pedir presupuesto <svg viewBox="0 0 24 24" width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
-        </div>
-      </article>
-
-      <article class="service-card service-card--cta reveal">
-        <h3>¿Tienes un proyecto en mente?</h3>
-        <p>Cuéntanos qué necesitas y te preparamos un presupuesto sin compromiso.</p>
-        <a href="#contacto" class="btn btn-white btn-small">Solicitar presupuesto</a>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CTA BANNER ===== -->
-<section class="cta-banner">
-  <div class="container cta-banner-inner reveal">
-    <div>
-      <span class="badge badge-on-accent">¿Listo para empezar?</span>
-      <h2>Hablemos de tu próxima reforma</h2>
-      <p class="cta-banner-sub">Un primer diagnóstico honesto, sin compromiso ni letra pequeña.</p>
-    </div>
-    <a href="#contacto" class="btn btn-white btn-large">Solicitar presupuesto</a>
-  </div>
-</section>
-
-<!-- ===== PROYECTOS ===== -->
-<section class="projects" id="proyectos">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="badge">Proyectos</span>
-      <h2>Nuestro trabajo</h2>
-      <p class="section-lead">Una muestra de reformas y construcciones que hemos llevado a cabo en Castelló y alrededores.</p>
-    </div>
-
-    <div class="projects-grid">
-      <figure class="project-card reveal">
-        <div class="img-card project-media">
-          <svg viewBox="0 0 480 340" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="340" fill="url(#gWall)"/>
-            <rect x="0" y="240" width="480" height="100" fill="url(#gFloorWood)"/>
-            <g stroke="#8f6b41" stroke-width="1" opacity="0.3"><line x1="0" y1="270" x2="480" y2="270"/><line x1="0" y1="305" x2="480" y2="305"/></g>
-            <rect x="30" y="50" width="140" height="170" rx="6" fill="url(#gSky)"/>
-            <circle cx="150" cy="105" r="36" fill="url(#gSun)"/>
-            <line x1="100" y1="50" x2="100" y2="220" stroke="#fff" stroke-width="4" opacity="0.85"/>
-            <ellipse cx="330" cy="292" rx="130" ry="14" fill="#1e293b" opacity="0.09" filter="url(#fSoftShadow)"/>
-            <rect x="240" y="220" width="200" height="80" rx="18" fill="url(#gSofaNeutral)"/>
-            <rect x="255" y="192" width="48" height="38" rx="12" fill="url(#gSofaBlue)"/>
-            <rect x="315" y="192" width="48" height="38" rx="12" fill="url(#gSofaBlueLight)"/>
-            <rect x="60" y="245" width="150" height="60" rx="8" fill="url(#gWood)"/>
-            <circle cx="90" cy="235" r="17" fill="url(#gPot)"/>
-            <path d="M90 235 C 78 205 82 185 90 165" stroke="url(#gLeaf)" stroke-width="5" fill="none" stroke-linecap="round"/>
-          </svg>
-          <span class="project-tag">Reforma integral</span>
-        </div>
-        <figcaption>
-          <h3>Vivienda unifamiliar</h3>
-          <p>Castelló de la Plana</p>
-        </figcaption>
-      </figure>
-
-      <figure class="project-card reveal">
-        <div class="img-card project-media">
-          <svg viewBox="0 0 480 340" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="340" fill="url(#gWallWarm)"/>
-            <rect x="0" y="240" width="480" height="100" fill="url(#gFloorLight)"/>
-            <g stroke="#c3b28d" stroke-width="1" opacity="0.35"><line x1="0" y1="270" x2="480" y2="270"/><line x1="0" y1="305" x2="480" y2="305"/></g>
-            <rect x="320" y="45" width="130" height="170" rx="8" fill="#ffffff"/>
-            <rect x="320" y="45" width="130" height="170" rx="8" fill="none" stroke="#ecdfc7" stroke-width="3"/>
-            <circle cx="370" cy="105" r="32" fill="#2563eb" opacity="0.85"/>
-            <circle cx="410" cy="140" r="19" fill="#93c5fd" opacity="0.8"/>
-            <path d="M345 148 Q 385 185 432 148" stroke="#1d4ed8" stroke-width="4" fill="none" stroke-linecap="round" opacity="0.6"/>
-            <ellipse cx="160" cy="292" rx="100" ry="12" fill="#1e293b" opacity="0.08" filter="url(#fSoftShadow)"/>
-            <rect x="80" y="235" width="150" height="50" rx="14" fill="url(#gSofaBlue)"/>
-            <path d="M100 235 Q100 195 150 195 Q200 195 200 235" fill="url(#gSofaBlue)"/>
-            <circle cx="270" cy="170" r="20" fill="url(#gPot)"/>
-            <path d="M270 170 C 253 130 258 105 270 78" stroke="url(#gLeaf)" stroke-width="6" fill="none" stroke-linecap="round"/>
-            <rect x="245" y="170" width="45" height="75" rx="6" fill="url(#gWood)"/>
-            <line x1="160" y1="150" x2="160" y2="195" stroke="#4a4033" stroke-width="3"/>
-            <path d="M128 150 L192 150 L178 178 L142 178 Z" fill="url(#gWoodDark)"/>
-          </svg>
-          <span class="project-tag">Interiorismo</span>
-        </div>
-        <figcaption>
-          <h3>Ático en el centro</h3>
-          <p>Castelló de la Plana</p>
-        </figcaption>
-      </figure>
-
-      <figure class="project-card reveal">
-        <div class="img-card project-media">
-          <svg viewBox="0 0 480 340" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="340" fill="url(#gSky)"/>
-            <circle cx="400" cy="65" r="32" fill="url(#gSun)"/>
-            <rect x="0" y="265" width="480" height="75" fill="#dfead9"/>
-            <ellipse cx="240" cy="270" rx="220" ry="14" fill="#1e293b" opacity="0.08" filter="url(#fSoftShadow)"/>
-            <polygon points="140,265 140,165 240,100 340,165 340,265" fill="#ffffff"/>
-            <polygon points="128,170 240,95 352,170 240,120" fill="url(#gRoof)"/>
-            <rect x="168" y="195" width="48" height="48" rx="4" fill="url(#gGlass)" stroke="#c7d2e0" stroke-width="3"/>
-            <rect x="264" y="195" width="48" height="48" rx="4" fill="url(#gGlass)" stroke="#c7d2e0" stroke-width="3"/>
-            <rect x="220" y="210" width="40" height="55" rx="3" fill="url(#gWoodDark)"/>
-            <circle cx="248" cy="238" r="2.4" fill="#e2e8f0"/>
-            <circle cx="90" cy="260" r="18" fill="url(#gLeaf)"/>
-            <circle cx="400" cy="263" r="22" fill="url(#gLeaf)"/>
-          </svg>
-          <span class="project-tag">Obra nueva</span>
-        </div>
-        <figcaption>
-          <h3>Chalet en Benicàssim</h3>
-          <p>Benicàssim</p>
-        </figcaption>
-      </figure>
-
-      <figure class="project-card reveal">
-        <div class="img-card project-media">
-          <svg viewBox="0 0 480 340" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="340" fill="url(#gSky)"/>
-            <circle cx="370" cy="60" r="34" fill="url(#gSun)"/>
-            <rect x="0" y="265" width="480" height="75" fill="#dfead9"/>
-            <polygon points="120,265 120,175 240,110 360,175 360,265" fill="#eef2f7"/>
-            <polygon points="108,180 240,105 372,180 240,130" fill="url(#gRoof)"/>
-            <g>
-              <rect x="150" y="135" width="34" height="20" rx="2" fill="#1d2b4a" transform="rotate(-8 167 145)"/>
-              <rect x="187" y="127" width="34" height="20" rx="2" fill="#24365c" transform="rotate(-8 204 137)"/>
-              <rect x="224" y="119" width="34" height="20" rx="2" fill="#1d2b4a" transform="rotate(-8 241 129)"/>
-            </g>
-            <rect x="170" y="205" width="50" height="50" rx="4" fill="url(#gGlass)" stroke="#c7d2e0" stroke-width="3"/>
-            <rect x="270" y="205" width="50" height="50" rx="4" fill="url(#gGlass)" stroke="#c7d2e0" stroke-width="3"/>
-            <ellipse cx="240" cy="270" rx="200" ry="12" fill="#1e293b" opacity="0.07" filter="url(#fSoftShadow)"/>
-            <circle cx="70" cy="260" r="18" fill="url(#gLeaf)"/>
-          </svg>
-          <span class="project-tag">Eficiencia energética</span>
-        </div>
-        <figcaption>
-          <h3>Rehabilitación energética</h3>
-          <p>Vila-real</p>
-        </figcaption>
-      </figure>
-
-      <figure class="project-card reveal">
-        <div class="img-card project-media">
-          <svg viewBox="0 0 480 340" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="340" fill="url(#gWall)"/>
-            <rect x="0" y="255" width="480" height="85" fill="url(#gFloorLight)"/>
-            <rect x="40" y="60" width="400" height="150" rx="8" fill="url(#gGlass)" stroke="#c7d2e0" stroke-width="4"/>
-            <line x1="240" y1="60" x2="240" y2="210" stroke="#c7d2e0" stroke-width="3"/>
-            <rect x="70" y="130" width="80" height="80" rx="4" fill="url(#gWood)" opacity="0.85"/>
-            <rect x="280" y="150" width="120" height="10" rx="5" fill="#2563eb" opacity="0.5"/>
-            <rect x="60" y="30" width="200" height="26" rx="13" fill="#0f1b38"/>
-            <circle cx="80" cy="43" r="5" fill="#2563eb"/>
-            <ellipse cx="240" cy="262" rx="200" ry="12" fill="#1e293b" opacity="0.08" filter="url(#fSoftShadow)"/>
-            <rect x="180" y="240" width="18" height="24" fill="url(#gMetal)"/>
-            <rect x="282" y="240" width="18" height="24" fill="url(#gMetal)"/>
-          </svg>
-          <span class="project-tag">Reforma de local</span>
-        </div>
-        <figcaption>
-          <h3>Local comercial</h3>
-          <p>Castelló de la Plana</p>
-        </figcaption>
-      </figure>
-
-      <figure class="project-card reveal">
-        <div class="img-card project-media">
-          <svg viewBox="0 0 480 340" class="scene" preserveAspectRatio="xMidYMid slice" aria-hidden="true">
-            <rect width="480" height="340" fill="url(#gWall)"/>
-            <rect x="0" y="240" width="480" height="100" fill="url(#gFloorLight)"/>
-            <ellipse cx="240" cy="288" rx="180" ry="14" fill="#1e293b" opacity="0.08" filter="url(#fSoftShadow)"/>
-            <rect x="90" y="165" width="260" height="90" rx="8" fill="url(#gWood)"/>
-            <rect x="90" y="165" width="260" height="14" rx="7" fill="#ffffff" opacity="0.25"/>
-            <g stroke="#2563eb" stroke-width="2" opacity="0.75">
-              <line x1="115" y1="115" x2="245" y2="115"/>
-              <line x1="115" y1="127" x2="220" y2="127"/>
-              <rect x="115" y="85" width="130" height="26" fill="none"/>
-              <line x1="150" y1="85" x2="150" y2="111"/>
-              <line x1="115" y1="98" x2="245" y2="98"/>
-            </g>
-            <rect x="260" y="130" width="70" height="45" rx="4" fill="#1e293b" opacity="0.85"/>
-            <rect x="266" y="136" width="58" height="30" rx="2" fill="#3b5c94"/>
-            <rect x="130" y="195" width="30" height="35" rx="4" fill="url(#gAccentPanel)"/>
-            <polygon points="145,193 130,207 160,207" fill="url(#gAccentPanel)"/>
-          </svg>
-          <span class="project-tag">Arquitectura</span>
-        </div>
-        <figcaption>
-          <h3>Vivienda de diseño</h3>
-          <p>Almassora</p>
-        </figcaption>
-      </figure>
-    </div>
-  </div>
-</section>
-
-<!-- ===== ANTES Y DESPUÉS ===== -->
-<section class="before-after" id="antes-despues">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="badge">Transformaciones reales</span>
-      <h2>Antes y después</h2>
-      <p class="section-lead">Desliza para ver el cambio. Ejemplo ilustrativo de una reforma integral de salón en Castelló de la Plana.</p>
-    </div>
-
-    <div class="ba-wrap reveal">
-      <div class="ba-slider" id="baSlider" style="--pos:50%">
-        <div class="ba-media ba-after">
-          <svg viewBox="0 0 500 320" class="ba-svg" aria-hidden="true">
-            <rect width="500" height="320" fill="url(#gWall)"/>
-            <rect x="0" y="240" width="500" height="80" fill="url(#gFloorWood)"/>
-            <g stroke="#8f6b41" stroke-width="1" opacity="0.3"><line x1="0" y1="265" x2="500" y2="265"/><line x1="0" y1="295" x2="500" y2="295"/></g>
-            <rect x="55" y="55" width="120" height="150" rx="6" fill="url(#gSky)"/>
-            <circle cx="150" cy="105" r="32" fill="url(#gSun)"/>
-            <line x1="115" y1="55" x2="115" y2="205" stroke="#fff" stroke-width="4" opacity="0.85"/>
-            <ellipse cx="330" cy="252" rx="140" ry="16" fill="#1e293b" opacity="0.09" filter="url(#fSoftShadow)"/>
-            <rect x="230" y="175" width="150" height="65" rx="16" fill="url(#gSofaNeutral)"/>
-            <rect x="238" y="150" width="35" height="30" rx="10" fill="url(#gSofaBlue)"/>
-            <rect x="345" y="150" width="35" height="30" rx="10" fill="url(#gSofaBlueLight)"/>
-            <circle cx="410" cy="150" r="26" fill="url(#gPot)"/>
-            <path d="M410 150 q-18 -50 -2 -70 M410 150 q18 -46 4 -68 M410 150 q0 -55 0 -75" stroke="url(#gLeaf)" stroke-width="6" fill="none" stroke-linecap="round"/>
-            <rect x="205" y="235" width="60" height="70" rx="6" fill="url(#gWood)"/>
-            <line x1="235" y1="90" x2="235" y2="150" stroke="#4a4033" stroke-width="3"/>
-            <path d="M215 70 L255 70 L245 90 L225 90 Z" fill="url(#gWoodDark)"/>
-            <rect x="60" y="215" width="180" height="10" rx="5" fill="#2563eb" opacity="0.3"/>
-          </svg>
-          <span class="ba-tag ba-tag--after">DESPUÉS</span>
-        </div>
-
-        <div class="ba-media ba-before">
-          <svg viewBox="0 0 500 320" class="ba-svg" aria-hidden="true">
-            <rect width="500" height="320" fill="#d7d2c7"/>
-            <rect x="0" y="240" width="500" height="80" fill="#b6ae9d"/>
-            <path d="M20 20 L80 90 M150 10 L110 70 M300 30 L340 100 M400 20 L430 80" stroke="#a39b89" stroke-width="1.5" fill="none"/>
-            <rect x="60" y="60" width="110" height="140" fill="none" stroke="#a39b89" stroke-width="2" stroke-dasharray="3 4"/>
-            <rect x="230" y="190" width="140" height="55" fill="none" stroke="#a39b89" stroke-width="2" stroke-dasharray="4 3"/>
-            <rect x="80" y="200" width="45" height="40" fill="#c2b89c" stroke="#a08f6a" stroke-width="1"/>
-            <rect x="130" y="215" width="35" height="25" fill="#c2b89c" stroke="#a08f6a" stroke-width="1"/>
-            <line x1="330" y1="70" x2="330" y2="110" stroke="#8a8474" stroke-width="2"/>
-            <circle cx="330" cy="115" r="7" fill="#efe6cf" stroke="#a39b89" stroke-width="1.5"/>
-            <circle cx="60" cy="150" r="1.6" fill="#8a8474"/>
-            <circle cx="90" cy="120" r="1.2" fill="#8a8474"/>
-            <circle cx="400" cy="160" r="1.8" fill="#8a8474"/>
-            <circle cx="370" cy="200" r="1.3" fill="#8a8474"/>
-          </svg>
-          <span class="ba-tag ba-tag--before">ANTES</span>
-        </div>
-
-        <div class="ba-handle" style="left:var(--pos)">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><path d="m9 6-6 6 6 6M15 6l6 6-6 6"/></svg>
-        </div>
-        <input type="range" min="0" max="100" value="50" class="ba-range" id="baRange" aria-label="Comparar antes y después">
-      </div>
-    </div>
-
-    <div class="ba-cta reveal">
-      <a href="#contacto" class="btn btn-outline-navy">Solicitar presupuesto</a>
-    </div>
-  </div>
-</section>
-
-<!-- ===== TESTIMONIOS ===== -->
-<section class="testimonials" id="testimonios">
-  <div class="container">
-    <div class="section-head reveal">
-      <span class="badge">Clientes</span>
-      <h2>Confianza construida proyecto a proyecto</h2>
-    </div>
-
-    <div class="testimonials-grid">
-      <article class="testimonial-card reveal">
-        <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-        <p class="testimonial-quote">&ldquo;Reformaron nuestra vivienda de arriba a abajo y el resultado superó lo que imaginábamos. Cumplieron plazos y presupuesto al céntimo.&rdquo;</p>
-        <div class="testimonial-author">
-          <span class="testimonial-avatar">MF</span>
-          <div>
-            <strong>Marta Ferrer</strong>
-            <span class="testimonial-location">Castelló de la Plana</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="testimonial-card reveal">
-        <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-        <p class="testimonial-quote">&ldquo;Equipo serio, profesional y con mucho gusto para el diseño. Volveríamos a confiar en RENOVE sin dudarlo.&rdquo;</p>
-        <div class="testimonial-author">
-          <span class="testimonial-avatar">JR</span>
-          <div>
-            <strong>Javier Roig</strong>
-            <span class="testimonial-location">Vila-real</span>
-          </div>
-        </div>
-      </article>
-
-      <article class="testimonial-card reveal">
-        <div class="testimonial-stars" aria-label="5 de 5 estrellas">★★★★★</div>
-        <p class="testimonial-quote">&ldquo;Desde el primer boceto hasta la entrega de llaves, todo fue transparente. Se nota que cuidan cada detalle.&rdquo;</p>
-        <div class="testimonial-author">
-          <span class="testimonial-avatar">LP</span>
-          <div>
-            <strong>Laura Peris</strong>
-            <span class="testimonial-location">Benicàssim</span>
-          </div>
-        </div>
-      </article>
-    </div>
-  </div>
-</section>
-
-<!-- ===== CONTACTO ===== -->
-<section class="contact" id="contacto">
-  <div class="container contact-grid">
-    <div class="contact-info reveal">
-      <span class="badge badge-navy">Hablemos</span>
-      <h2>Contacto</h2>
-      <p class="section-lead">¿Tienes un proyecto entre manos? Escríbenos o llámanos y te atenderemos sin compromiso.</p>
-
-      <ul class="contact-list">
-        <li>
-          <span class="contact-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 10c0 7-9 12-9 12s-9-5-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
-          </span>
-          <div>
-            <strong>Dirección</strong>
-            <p>Polígono Estadio, nave 24<br>12004 Castelló de la Plana, Castellón</p>
-          </div>
-        </li>
-        <li>
-          <span class="contact-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-          </span>
-          <div>
-            <strong>Teléfono</strong>
-            <p><a href="tel:+34687721555">687 72 15 55</a></p>
-          </div>
-        </li>
-        <li>
-          <span class="contact-icon">
-            <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-          </span>
-          <div>
-            <strong>Horario</strong>
-            <p>Lunes a viernes, 9:00 &ndash; 18:00</p>
-          </div>
-        </li>
-      </ul>
-
-      <div class="img-card contact-map" aria-hidden="true">
-        <svg viewBox="0 0 400 200" preserveAspectRatio="xMidYMid slice">
-          <rect width="400" height="200" class="map-bg"/>
-          <path d="M0 140 C 80 120, 140 160, 220 130 S 340 90, 400 120" class="map-road" stroke-width="10" fill="none"/>
-          <path d="M0 60 C 100 90, 180 40, 260 70 S 360 40, 400 60" class="map-road" stroke-width="6" fill="none"/>
-          <circle cx="230" cy="105" r="8" class="map-pin"/>
-          <circle cx="230" cy="105" r="14" fill="none" class="map-pin-ring" stroke-width="2"/>
-        </svg>
-      </div>
-    </div>
-
-    <div class="contact-form-wrap reveal">
-      <span class="contact-form-ribbon"></span>
-      <form class="contact-form" id="contactForm" novalidate>
-        <h3>Solicita tu presupuesto gratis</h3>
-        <p class="form-sub">Cuéntanos brevemente tu proyecto y te responderemos lo antes posible.</p>
-
-        <p class="form-urgency">
-          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.5 2"/></svg>
-          Solo aceptamos 3 proyectos nuevos este mes para mantener nuestro nivel de dedicación en cada obra.
-        </p>
-
-        <div class="form-field">
-          <label for="name">Nombre</label>
-          <input type="text" id="name" name="name" placeholder="Tu nombre completo" required>
-          <span class="field-error">Introduce tu nombre.</span>
-        </div>
-
-        <div class="form-field">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="tunombre@email.com" required>
-          <span class="field-error">Introduce un email válido.</span>
-        </div>
-
-        <div class="form-field">
-          <label for="message">Mensaje</label>
-          <textarea id="message" name="message" rows="5" placeholder="Cuéntanos sobre tu proyecto..." required></textarea>
-          <span class="field-error">Cuéntanos algo sobre tu proyecto.</span>
-        </div>
-
-        <button type="submit" class="btn btn-primary btn-full btn-large">Enviar solicitud</button>
-        <p class="form-note" id="formNote" role="status"></p>
-      </form>
-    </div>
-  </div>
-</section>
-
-<!-- ===== FOOTER ===== -->
-<footer class="site-footer">
-  <div class="container footer-inner">
-    <div class="footer-brand">
-      <span class="logo-mark">
-        <svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11.5 12 4l9 7.5"/><path d="M5.5 10v9.5h13V10"/><path d="M9.5 19.5V14h5v5.5"/></svg>
-      </span>
-      <span class="logo-text">RENOVE<em>PROYECTOS</em></span>
-      <p>Construcción y reformas en Castelló de la Plana.</p>
-    </div>
-
-    <nav class="footer-nav" aria-label="Enlaces del pie de página">
-      <a href="#inicio">Inicio</a>
-      <a href="#nosotros">Sobre nosotros</a>
-      <a href="#servicios">Servicios</a>
-      <a href="#proyectos">Proyectos</a>
-      <a href="#contacto">Contacto</a>
-    </nav>
-
-    <div class="footer-contact">
-      <p>Polígono Estadio, nave 24, 12004 Castelló de la Plana, Castellón</p>
-      <p><a href="tel:+34687721555">687 72 15 55</a></p>
-    </div>
-  </div>
-  <div class="footer-bottom">
+  <!-- ===== HERO ===== -->
+  <section class="hero">
     <div class="container">
-      <p>&copy; <span id="year"></span> RENOVE PROYECTOS. Todos los derechos reservados.</p>
+      <div class="hero-copy">
+        <span class="eyebrow"><svg><use href="#icon-pin"/></svg> Castellón y Comunidad Valenciana</span>
+        <h1>Hacemos webs para empresas de reformas que convierten visitas en presupuestos.</h1>
+        <p class="hero-sub">En dos semanas y con precio cerrado.</p>
+        <div class="hero-actions">
+          <a href="trabajos.html" class="btn btn-secondary">Ver trabajos</a>
+          <a href="contacto.html" class="btn btn-primary">Pedir presupuesto</a>
+        </div>
+        <ul class="hero-trust">
+          <li><svg><use href="#icon-check"/></svg> Trato directo, sin intermediarios</li>
+          <li><svg><use href="#icon-check"/></svg> Precio cerrado antes de empezar</li>
+          <li><svg><use href="#icon-check"/></svg> Entrega en 2 semanas</li>
+        </ul>
+      </div>
+
+      <div class="hero-visual">
+        <div class="mockup-stage">
+          <!-- Mockup portátil -->
+          <svg class="mockup-laptop" viewBox="0 0 640 430" xmlns="http://www.w3.org/2000/svg">
+            <rect x="10" y="6" width="620" height="368" rx="14" fill="#10182b"/>
+            <rect x="22" y="18" width="596" height="344" rx="4" fill="#ffffff"/>
+            <!-- barra navegador -->
+            <rect x="22" y="18" width="596" height="30" rx="4" fill="#f4f6fa"/>
+            <circle cx="38" cy="33" r="4" fill="#e3e7ee"/>
+            <circle cx="52" cy="33" r="4" fill="#e3e7ee"/>
+            <circle cx="66" cy="33" r="4" fill="#e3e7ee"/>
+            <rect x="230" y="27" width="180" height="12" rx="6" fill="#ffffff" stroke="#e3e7ee"/>
+            <!-- header del sitio -->
+            <rect x="22" y="48" width="596" height="48" fill="#ffffff"/>
+            <rect x="46" y="66" width="70" height="10" rx="3" fill="#10182b"/>
+            <rect x="360" y="68" width="36" height="7" rx="3" fill="#c7cddb"/>
+            <rect x="410" y="68" width="36" height="7" rx="3" fill="#c7cddb"/>
+            <rect x="460" y="68" width="36" height="7" rx="3" fill="#c7cddb"/>
+            <rect x="520" y="60" width="76" height="22" rx="5" fill="#2554d9"/>
+            <line x1="22" y1="96" x2="618" y2="96" stroke="#e3e7ee"/>
+            <!-- hero del sitio -->
+            <rect x="22" y="96" width="596" height="130" fill="#f9fafc"/>
+            <rect x="48" y="128" width="150" height="13" rx="4" fill="#10182b"/>
+            <rect x="48" y="150" width="190" height="13" rx="4" fill="#10182b"/>
+            <rect x="48" y="176" width="140" height="8" rx="4" fill="#97a0b3"/>
+            <rect x="48" y="192" width="110" height="8" rx="4" fill="#97a0b3"/>
+            <rect x="48" y="210" width="100" height="24" rx="6" fill="#2554d9"/>
+            <rect x="330" y="118" width="260" height="90" rx="8" fill="#dbe4f7"/>
+            <rect x="330" y="118" width="260" height="90" rx="8" fill="none" stroke="#c3d1f0"/>
+            <path d="M330 190 L390 150 L440 178 L480 138 L590 185 L590 208 L330 208 Z" fill="#b7c8ec"/>
+            <!-- galería de obras -->
+            <rect x="48" y="250" width="90" height="6" rx="3" fill="#10182b"/>
+            <rect x="48" y="268" width="168" height="80" rx="6" fill="#e7ecf6"/>
+            <rect x="226" y="268" width="168" height="80" rx="6" fill="#dbe4f7"/>
+            <rect x="404" y="268" width="192" height="80" rx="6" fill="#eef2fd"/>
+            <path d="M48 330 L88 300 L118 320 L216 280" stroke="#c3d1f0" stroke-width="4" fill="none"/>
+            <path d="M226 336 L266 306 L300 322 L394 286" stroke="#b7c8ec" stroke-width="4" fill="none"/>
+          </svg>
+
+          <!-- soporte del portátil -->
+          <svg class="mockup-laptop" viewBox="0 0 640 40" xmlns="http://www.w3.org/2000/svg" style="margin-top:-4px">
+            <path d="M0 0 H640 L590 34 H50 Z" fill="#1b2340"/>
+          </svg>
+
+          <!-- Mockup móvil -->
+          <svg class="mockup-phone" viewBox="0 0 220 440" xmlns="http://www.w3.org/2000/svg">
+            <rect x="2" y="2" width="216" height="436" rx="30" fill="#10182b"/>
+            <rect x="12" y="14" width="196" height="412" rx="20" fill="#ffffff"/>
+            <rect x="80" y="20" width="60" height="10" rx="5" fill="#10182b"/>
+            <rect x="12" y="50" width="196" height="120" fill="#f9fafc"/>
+            <rect x="30" y="76" width="110" height="11" rx="4" fill="#10182b"/>
+            <rect x="30" y="94" width="90" height="8" rx="4" fill="#97a0b3"/>
+            <rect x="30" y="116" width="90" height="22" rx="6" fill="#2554d9"/>
+            <rect x="26" y="188" width="86" height="70" rx="6" fill="#e7ecf6"/>
+            <rect x="118" y="188" width="76" height="70" rx="6" fill="#dbe4f7"/>
+            <rect x="26" y="266" width="86" height="70" rx="6" fill="#dbe4f7"/>
+            <rect x="118" y="266" width="76" height="70" rx="6" fill="#eef2fd"/>
+            <rect x="26" y="360" width="168" height="34" rx="8" fill="#2554d9"/>
+            <rect x="60" y="371" width="100" height="10" rx="5" fill="#ffffff"/>
+            <circle cx="182" cy="412" r="14" fill="#23b757"/>
+            <svg x="172" y="402" width="20" height="20" viewBox="0 0 24 24"><use href="#icon-whatsapp" fill="none" stroke="#ffffff" stroke-width="1.9"/></svg>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SOLO REFORMAS ===== -->
+  <section class="section section-alt">
+    <div class="container about-grid">
+      <div>
+        <span class="eyebrow">Especialización</span>
+        <h2>Solo hacemos webs para empresas de reformas.</h2>
+      </div>
+      <div class="about-copy">
+        <p>No somos una agencia generalista que un mes hace la web de una peluquería y al siguiente la de un despacho de abogados. Nos dedicamos únicamente a empresas de reformas integrales, y eso significa que sabemos cómo consigue clientes una empresa como la tuya: el cliente busca en Google, mira las obras terminadas y decide si te llama antes de coger el teléfono.</p>
+        <p>Por eso nuestras webs no giran alrededor de textos bonitos, sino de lo que realmente mueve a un cliente a pedir presupuesto: enseñar obras reales y ponerle fácil el contacto. Todo lo demás está pensado para reforzar esas dos cosas.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== QUÉ INCLUYE ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Qué incluye</span>
+        <h2>Qué incluye una web nuestra</h2>
+        <p>Cada elemento tiene un motivo: acercar al visitante a pedir presupuesto.</p>
+      </div>
+      <div class="feature-grid">
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#icon-gallery"/></svg></div>
+          <h3>Galería de obras</h3>
+          <p>Espacio pensado para enseñar tus reformas terminadas, que es lo primero que mira un cliente potencial.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#icon-form"/></svg></div>
+          <h3>Formulario de presupuesto</h3>
+          <p>Un formulario simple para que pedir presupuesto no tenga fricción y te lleguen los datos que necesitas.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#icon-whatsapp"/></svg></div>
+          <h3>Botón de WhatsApp</h3>
+          <p>Para el cliente que prefiere escribir directamente en lugar de rellenar un formulario.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#icon-search"/></svg></div>
+          <h3>Ficha de Google optimizada</h3>
+          <p>Conectamos tu web con tu ficha de Google Empresa para que aparezcas cuando buscan reformas en tu zona.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#icon-mobile"/></svg></div>
+          <h3>Perfecta en móvil</h3>
+          <p>La mayoría de tus clientes te van a encontrar desde el móvil, así que se diseña primero para esa pantalla.</p>
+        </div>
+        <div class="feature-card">
+          <div class="feature-icon"><svg><use href="#icon-bolt"/></svg></div>
+          <h3>Carga rápida</h3>
+          <p>Una web lenta pierde visitas antes de que lleguen a ver nada. La construimos para que cargue rápido.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CÓMO TRABAJAMOS ===== -->
+  <section class="section section-alt">
+    <div class="container">
+      <div class="section-head center">
+        <span class="eyebrow">Proceso</span>
+        <h2>Cómo trabajamos</h2>
+        <p>Sin vueltas: cuatro pasos, de la conversación inicial a la web publicada.</p>
+      </div>
+      <div class="steps-grid">
+        <div class="step-card">
+          <span class="step-num">1</span>
+          <h3>Hablamos y vemos qué necesitas</h3>
+          <p>Una llamada o mensaje para entender tu empresa, tus obras y qué te está fallando ahora mismo.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">2</span>
+          <h3>Te enseñamos una propuesta visual sin coste</h3>
+          <p>Antes de que decidas nada, ves cómo quedaría tu web. Sin compromiso.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">3</span>
+          <h3>Si te gusta, la construimos en dos semanas</h3>
+          <p>Con precio cerrado desde el principio, sin sorpresas a mitad de proyecto.</p>
+        </div>
+        <div class="step-card">
+          <span class="step-num">4</span>
+          <h3>La publicamos y nos encargamos del mantenimiento</h3>
+          <p>Dominio, hosting y actualizaciones: tú te dedicas a las reformas, nosotros a la web.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="section">
+    <div class="container">
+      <div class="cta-band">
+        <div>
+          <h2>¿Hablamos de tu web?</h2>
+          <p>Cuéntanos en qué punto está tu empresa. Te respondemos por email o WhatsApp, sin compromiso.</p>
+        </div>
+        <div class="cta-band-actions">
+          <a href="contacto.html" class="btn btn-primary">Pedir presupuesto</a>
+          <a href="trabajos.html" class="btn btn-ghost-light">Ver trabajos</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== PIE ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="brand">
+          <span class="brand-mark">A</span>
+          <span class="brand-name">ACA Agency</span>
+        </a>
+        <p>Agencia de diseño web especializada únicamente en empresas de reformas integrales de vivienda. Castellón y provincia, y Comunidad Valenciana.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="trabajos.html">Trabajos</a></li>
+          <li><a href="precios.html">Precios</a></li>
+          <li><a href="contacto.html">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="mailto:acaagency26@gmail.com">acaagency26@gmail.com</a></li>
+          <li><span class="pending">Teléfono / WhatsApp: por confirmar</span></li>
+          <li><span>Castellón y Comunidad Valenciana</span></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-legal">
+      <span>© 2026 ACA Agency. Todos los derechos reservados.</span>
+      <span>NIF: <span class="pending">por confirmar</span> · Domicilio fiscal: <span class="pending">por confirmar</span></span>
     </div>
   </div>
 </footer>
-
-<!-- ===== FLOATING CONTACT ACTIONS ===== -->
-<div class="floating-actions" id="floatingActions">
-  <a class="fab fab-whatsapp" href="https://wa.me/34687721555?text=Hola%2C%20me%20gustar%C3%ADa%20pedir%20un%20presupuesto" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
-    <svg viewBox="0 0 24 24" width="24" height="24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.82L2 22l5.4-1.35a9.9 9.9 0 0 0 4.64 1.15h.01c5.46 0 9.9-4.45 9.9-9.91C21.96 6.45 17.5 2 12.04 2zm0 18.02h-.01a8.2 8.2 0 0 1-4.18-1.15l-.3-.18-3.1.78.83-3.03-.2-.31a8.16 8.16 0 0 1-1.26-4.32c0-4.52 3.68-8.2 8.22-8.2a8.16 8.16 0 0 1 8.2 8.2c0 4.53-3.68 8.21-8.2 8.21zm4.5-6.13c-.25-.12-1.46-.72-1.68-.8-.23-.08-.39-.12-.56.12-.16.25-.64.8-.78.96-.14.16-.29.18-.53.06-.25-.12-1.04-.38-1.98-1.22-.73-.65-1.23-1.45-1.37-1.7-.14-.25-.02-.38.11-.5.11-.11.25-.29.37-.43.12-.14.16-.25.25-.41.08-.16.04-.31-.02-.43-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43-.14-.01-.31-.01-.48-.01-.16 0-.43.06-.66.31-.23.25-.86.84-.86 2.04 0 1.2.88 2.37 1 2.53.12.16 1.73 2.64 4.2 3.7.59.25 1.05.4 1.4.52.59.19 1.13.16 1.55.1.47-.07 1.46-.6 1.67-1.17.2-.58.2-1.07.14-1.17-.06-.11-.22-.17-.47-.29z"/></svg>
-    <span class="fab-tooltip">WhatsApp</span>
-  </a>
-  <a class="fab fab-phone" href="tel:+34687721555" aria-label="Llamar por teléfono">
-    <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-    <span class="fab-tooltip">Llamar</span>
-  </a>
-</div>
 
 <script src="script.js"></script>
 </body>
